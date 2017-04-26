@@ -12,7 +12,7 @@ var nouns = ['cat', 'koolaid', 'system', 'city', 'worm', 'cloud', 'potato', 'mon
 var tags = ['#techlife', '#burningman', '#sf', 'but only i know how', 'for real', '#sxsw', '#ballin', '#omg', '#yolo', '#magic', '', '', '', ''];
 
 var randomMessage = function(){
-  return [randomElement(opening), randomElement(verbs), randomElement(objects), randomElement(nouns), randomElement(tags)].join(' ');
+  return [randomElement(opening), randomElement(verbs), randomElement(objects), randomElement(nouns), randomElement(tags)].join(' ').trim();
 };
 
 process.stdout.write(randomMessage());
